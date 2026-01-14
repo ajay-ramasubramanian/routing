@@ -1,0 +1,14 @@
+name = "chiroatwater-routing-worker"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+# Environment variables for target Cloudflare Pages deployments
+# Replace these placeholder URLs with your actual Cloudflare Pages URLs
+[vars]
+CHIROATWATER_PAGES_URL = "https://chiroatwater-website.pages.dev"
+GODOT_PAGES_URL = "https://simon-tanguay.pages.dev"
+
+# Uncomment and configure for production deployment
+# [routes]
+# route = "www.chiroatwater.com/*"
+# zone_name = "chiroatwater.com"
