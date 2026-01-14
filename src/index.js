@@ -70,11 +70,11 @@ function getRoutingTarget(path, env) {
         // Remove the /painrelief prefix for the origin request
         // /painrelief/en/page -> /en/page
         // /painrelief -> /
-        let rewrittenPath = path.replace(/^\/painrelief/, '') || '/';
+        // let rewrittenPath = path.replace(/^\/painrelief/, '') || '/';
 
         return {
             targetUrl: chiroatwaterUrl,
-            rewrittenPath: rewrittenPath,
+            rewrittenPath: path,
         };
     }
 
